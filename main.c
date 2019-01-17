@@ -1,6 +1,25 @@
 #include <stdio.h>
 int index=0;
 char arr[1024];
+int isMinGan(char x)
+{
+    int count = 0;
+    for (int i = 0; i < index; i++)
+    {
+        if (x == arr[i])
+        {
+            count++;
+        }
+    }
+    if (count == 0)
+    {
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
+}
 int main()
 {
 
@@ -65,6 +84,28 @@ int main()
         }
         if (code == 4)
         {
+            printf("qingshuruyiduanyingweng\n");
+            char content[1024];
+            scanf("%s", content);
+            for (int i = 0; 1; i++)
+            {
+                if (content[i] == '\0')
+                {
+                    break;
+                }
+                int r = isMinGan(content[i]);
+                if (r == 1)
+                {
+                    content[i] = '#';
+                    // printf("%c", content[i]);
+                }
+                printf("%c", content[i]);
+            }
+            printf("\n");
+            printf("tihuanwancheng,dianjihichjixu\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 5)
         {
