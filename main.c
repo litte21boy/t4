@@ -27,6 +27,7 @@ int main()
 
             arr[index] = a;
             index++;
+            
             printf("tianjiachenggong,dianjihuichejixu\n");
             char x;
             scanf("%c", &x);
@@ -34,6 +35,21 @@ int main()
         }
         if (code == 2)
         {
+            char x;
+            printf("shanchu\n");
+            if (index > 0)
+            {
+                index--;
+                printf("shanchuchenggong,dianjihuichejixu\n");
+                scanf("%c", &x);
+                scanf("%c", &x);
+            }
+            else
+            {
+                printf("shanchushibai,dianjihichejixu\n");
+                scanf("%c", &x);
+                scanf("%c", &x);
+            }
         }
         if (code == 3)
         {
